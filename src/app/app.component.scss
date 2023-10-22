@@ -1,0 +1,36 @@
+.wrapper {
+    height: 100%;
+    background-color: #292929;
+}
+.container {
+    width: 300px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.form__field_text {
+    padding: 5px;
+    margin: 15px;
+    text-align: center;
+    font-size: 28px;
+    color: black;
+    border: solid 1px black;
+    border-radius: 5px;
+    &:focus {
+        box-shadow: 0 0 3px 3px greenyellow;
+    }
+    &.ng-invalid.ng-touched{
+        box-shadow: 0 0 3px 3px rgba(241, 56, 56, 0.811);
+    }
+}
+.strength_pass{
+    display: flex;
+    justify-content: space-around;
+}
+.section_str{
+    width: 80px;
+    height: 10px;
+    border-radius: 5px;
+}
